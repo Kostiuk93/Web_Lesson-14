@@ -1,0 +1,118 @@
+/* @import 'css/buttons.css'; */ /* Пример подключения сторонних стилей в css файле */
+
+/* селектор {
+    свойство: значение;
+    свойство: значение;
+    свойство: значение;
+} */
+
+
+/* Селектор всего - *. Применяется ко всей страницы */
+* {
+    box-sizing: border-box;
+
+}
+body {
+    background-color: rgb(237, 238, 204);
+}
+
+h1 {
+    color: rgb(150, 22, 22);
+    text-align: center;
+    font-weight: 900;
+}
+
+h2 {
+    color: rgb(150, 22, 22);
+    text-align: center;
+    font-weight: 900;    
+}
+
+.textItalic{
+    font-style: italic;
+}
+
+.textThrough{
+    text-decoration: line-through;
+}
+
+.textWeight{
+    font-weight: 900;
+}
+
+
+.box {
+    position: absolute;
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    background-color:green;
+    padding: 20px;
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: black; */
+    border: 3px solid black;
+    margin: 20px;
+    z-index: 5;
+}
+
+a {
+    padding: 20px;
+    margin: 20px
+}
+
+.imgLesson {
+    display: block;
+    margin: 0 auto; /* - ВЫРАВНИВАНИЕ ПО ГОРИЗОНТАЛИ */
+    width: 300px;
+    height: 300px;
+}
+
+/* Блочные элементы
+display: block; */
+/* Строчные элементы
+display:inline */
+/* Блочно-строчные элементы
+display:inline-block */
+
+.imgLesson {
+    /* static - Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.
+ 
+    relative - Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения. 
+ 
+    absolute - Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента. 
+    
+    fixed -  По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элементаs
+    
+    inherit -Наследует значение родителя. */
+    /* position: relative;
+    left: 30px;
+    top: 150px; */
+
+    /* position: absolute;
+    right: 0px;
+    top: 50px; */
+
+    /* position: fixed;
+    right: 0px;
+    top: 50px; */
+
+    position: inherit;
+    right: 0px;
+    top: 50px;
+
+
+    /* bottom, top, left, right */
+}
+
+
+.red { 
+    background-color:red;
+    left: 80px;
+    position: absolute;
+    z-index: 4;
+}
+.example { 
+    position: relative;
+    height: 500px;
+}
